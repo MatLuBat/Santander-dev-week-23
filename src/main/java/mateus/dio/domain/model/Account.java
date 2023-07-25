@@ -22,11 +22,11 @@ public class Account {
     private String agency;
     @Getter
     @Setter
-    @Column(scale = 7, precision = 2)
+    @Column(precision = 10, scale = 2)
     private BigDecimal balance;
     @Getter
     @Setter
-    @Column(name = "acc_limit",scale = 7, precision = 2)
+    @Column(name = "acc_limit", precision = 10, scale = 2)
     private BigDecimal limit;
 
 }
